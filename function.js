@@ -7,7 +7,7 @@ const searchResults = document.querySelector("#searchResults");
 //const keyAPI = "f6211bc24c258c57f7a7fba887afdd17";
 
 
-const url_API = "https://api.openweathermap.org/data/2.5/weather?q=Halle&appid=f6211bc24c258c57f7a7fba887afdd17"
+const url_API = `https://api.openweathermap.org/data/2.5/weather?q=Gent&appid=f6211bc24c258c57f7a7fba887afdd17`
 //const urlHour = "https://api.openweathermap.org/data/2.5/forecast?q=Halle&appid=f6211bc24c258c57f7a7fba887afdd17"
 
 form.addEventListener("submit", formDone);
