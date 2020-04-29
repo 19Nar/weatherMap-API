@@ -1,0 +1,52 @@
+const card = document.querySelector(".card");
+const searchForCity = document.querySelector(".search");
+
+const keyAPI = "f6211bc24c258c57f7a7fba887afdd17";
+const search = searchForCity.value;
+ 
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchForCity.value}&appid=${keyAPI}&units=metric`;
+ 
+card.addEventListener("submit", e => {
+  e.preventDefault();
+  const search = searchForCity.value;
+  console.log(search)
+});
+
+const getData = (city) =>{
+  let dataPromis = fetch(url);
+  return dataPromis.then((response)=>{
+      return response.json()
+  })
+};
+const searchCity = () =>{
+let city = input.value;
+getData(city)
+    .then((response)=>{
+        showData(response)
+    }).catch((error)=>{
+        console.log(error)
+})
+};
+const showData = (response) => {
+  country.innerHTML = response.name;
+  w.innerHTML = response.weather[0].main;
+  t.innerHTML = response.main.t;
+  pres.innerHTML = response.main.pres;
+  hum.innerHTML = response.main.hum;
+  ws.innerHTML = response.main.ws;
+};
+
+
+
+/*
+fetch(url)
+  .then(response => response.json())
+  .then(data => {
+
+    
+  })
+  .catch(() => {
+    
+  });
+
+*/
