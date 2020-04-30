@@ -5,10 +5,12 @@ const searchResults = document.querySelector("#searchResults");
 //const hourInput = document.querySelector("#timeResults");
 
 //const keyAPI = "f6211bc24c258c57f7a7fba887afdd17";
+//const urlHour = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`
+
 
 
 const url_API = `https://api.openweathermap.org/data/2.5/weather?q=Antwerpen&appid=f6211bc24c258c57f7a7fba887afdd17`
-//const urlHour = `https://api.openweathermap.org/data/2.5/forecast?q=Halle&appid=f6211bc24c258c57f7a7fba887afdd17`
+
 
 form.addEventListener("submit", formDone);
 
@@ -103,7 +105,6 @@ const getTimeResults = () => {
     .then(response => response.json())
     .then(weatherInfo => {
 
-      searchResults.innerHTML = `
-
+      searchResults.innerHTML = 
     })
 };*/
