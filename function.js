@@ -9,7 +9,7 @@ const searchResults = document.querySelector("#searchResults");
 
 
 
-const url_API = `https://api.openweathermap.org/data/2.5/weather?q=Antwerpen&appid=f6211bc24c258c57f7a7fba887afdd17`
+const url_API = `https://api.openweathermap.org/data/2.5/weather?q=Halle&appid=f6211bc24c258c57f7a7fba887afdd17`
 
 
 form.addEventListener("submit", formDone);
